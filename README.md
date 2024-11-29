@@ -26,9 +26,9 @@
   #### Language
    - Python
   #### Python Dependencies
-     - PyQt5
-     - usb
-     - pycan
-     - numpy
+   - PyQt5
+   - usb
+   - pycan
+   - numpy
   #### Driver
    - libusbK
