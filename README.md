@@ -2,33 +2,33 @@
  Project Overview: Developing a Low-Cost BLDC Motor Actuator Using ST's B-G431B-ESC1
  
  ### Actuator
-  - Hardware
+   #### Hardware
    - Control Circuit: B-G431B-ESC1
    - Motor: 5010-360Kv BLDC Motor
    - Encoder: TLE5012b
-  - Development Programs
+  #### Development Programs
    - ST MotorControl Workbench
    - ST Motor Pilot
    - STM32CubeIDE
    - STM32CubeMX
-  - Language
+  #### Language
    - C
-  - Middleware
+  #### Middleware
    - HAL Driver
    - MotorControl
 
  ### GUI
-  - Hardware
+  #### Hardware
    - Canable
-  - Development Programs
+  #### Development Programs
    - Qt Designer
    - VScode
-  - Language
+  #### Language
    - Python
-     Python Dependencies
+  #### Python Dependencies
      - PyQt5
      - usb
      - pycan
      - numpy
-  - Driver
+  #### Driver
    - libusbK
