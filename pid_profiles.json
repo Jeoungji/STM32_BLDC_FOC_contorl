@@ -1,0 +1,30 @@
+{
+    "Profile2": {
+        "position": {
+            "kp": 1.2,
+            "kp_div": 1.0,
+            "ki": 0.6,
+            "ki_div": 2.0,
+            "kd": 0.2,
+            "kd_div": 0.2
+        },
+        "velocity": {
+            "kp": 2.5,
+            "kp_div": 1.8,
+            "ki": 1.2,
+            "ki_div": 2.3
+        },
+        "iq": {
+            "kp": 1.0,
+            "kp_div": 1.0,
+            "ki": 0.5,
+            "ki_div": 1.0
+        },
+        "id": {
+            "kp": 1.7,
+            "kp_div": 1.1,
+            "ki": 0.7,
+            "ki_div": 1.4
+        }
+    }
+}

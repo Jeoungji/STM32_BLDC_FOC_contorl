@@ -1,0 +1,6 @@
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:71:6:TIM4_IRQHandler	3
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:110:6:USART2_IRQHandler	12
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:188:6:HardFault_Handler	1
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:207:6:SysTick_Handler	3
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:262:6:EXTI15_10_IRQHandler	2
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:281:6:EXTI9_5_IRQHandler	2

@@ -1,0 +1,7 @@
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:33:9:RI_SetRegisterGlobal	15
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:167:9:RI_SetRegisterMotor1	92
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:637:9:RI_GetRegisterGlobal	20
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:782:11:RI_GetRegisterMotor1	118
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:1433:9:RI_MovString	4
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:1459:9:RI_GetIDSize	2
+C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:1494:16:RI_GetPtrReg	24
