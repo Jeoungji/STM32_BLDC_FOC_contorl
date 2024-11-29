@@ -3,9 +3,9 @@
  
  Actuator
   - Hardware
-   - Control Circuit: B-G431B-ESC1
-   - Motor: 5010-360Kv BLDC Motor
-   - Encoder: TLE5012b
+   -- Control Circuit: B-G431B-ESC1
+   -- Motor: 5010-360Kv BLDC Motor
+   -- Encoder: TLE5012b
   - Development Programs
    - ST MotorControl Workbench
    - ST Motor Pilot
