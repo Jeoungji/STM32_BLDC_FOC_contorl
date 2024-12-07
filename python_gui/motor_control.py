@@ -265,6 +265,7 @@ class Motor_Control:
         header = self.__create_byte_list(Command.USER_SET, U_TYPE_DATA_32BIT, U_POSITION)
         float_bytes = struct.pack('<f', rad)
         self.canable.Send(self.motorid, 7, header + list(float_bytes))
+        print("set pos : ", rad)
         
     def Set_Velocity_Limit(self, vel_upper, vel_lower):
         print("Set_Velocity_Limit")

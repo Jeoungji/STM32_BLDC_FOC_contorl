@@ -419,7 +419,8 @@ void USER_Set(uint16_t regID, uint8_t typeID, uint8_t *data, uint16_t *size) {
 			{
 				float target;
 				memcpy(&target, regdata32, sizeof(float));
-				MC_ProgramPositionCommandMotor1(target, 0);
+				if (target > - 3.14*2 && target < 3.14*2)
+					MC_ProgramPositionCommandMotor1(target, 0);
 
 				break;
 			}
@@ -453,8 +454,8 @@ void USER_Set(uint16_t regID, uint8_t typeID, uint8_t *data, uint16_t *size) {
 				motor.velLimit[0] =  regdata16_1;
 
 				int16_t regdata16_2 = *(int16_t *)(data+2);
-				if (regdata16_1 > MAX_APPLICATION_SPEED_UNIT)
-					regdata16_1 = MAX_APPLICATION_SPEED_UNIT;
+				if (regdata16_2 > MAX_APPLICATION_SPEED_UNIT)
+					regdata16_2 = MAX_APPLICATION_SPEED_UNIT;
 				motor.velLimit[1] =  regdata16_2;
 
 				U_SetLimit(motor.mode);
@@ -468,9 +469,11 @@ void USER_Set(uint16_t regID, uint8_t typeID, uint8_t *data, uint16_t *size) {
 				motor.curLimit[0] = (int32_t)regdata16_1;
 
 				int16_t regdata16_2 = *(int16_t *)(data+2);
-				if (regdata16_1 > NOMINAL_CURRENT)
-					regdata16_1 = NOMINAL_CURRENT;
+				if (regdata16_2 > NOMINAL_CURRENT)
+					regdata16_2 = NOMINAL_CURRENT;
 				motor.curLimit[1] = (int32_t)regdata16_2;
+
+
 
 				U_SetLimit(motor.mode);
 				break;

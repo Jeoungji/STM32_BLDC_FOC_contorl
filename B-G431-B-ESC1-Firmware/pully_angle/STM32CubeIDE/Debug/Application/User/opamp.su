@@ -1,5 +1,5 @@
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/opamp.c:32:6:MX_OPAMP1_Init	8	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/opamp.c:61:6:MX_OPAMP2_Init	8	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/opamp.c:90:6:MX_OPAMP3_Init	8	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/opamp.c:119:6:HAL_OPAMP_MspInit	48	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/opamp.c:188:6:HAL_OPAMP_MspDeInit	0	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/opamp.c:32:6:MX_OPAMP1_Init	8	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/opamp.c:61:6:MX_OPAMP2_Init	8	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/opamp.c:90:6:MX_OPAMP3_Init	8	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/opamp.c:119:6:HAL_OPAMP_MspInit	48	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/opamp.c:188:6:HAL_OPAMP_MspDeInit	0	static

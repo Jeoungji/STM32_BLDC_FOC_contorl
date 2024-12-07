@@ -1,5 +1,5 @@
 Application/User/usart_aspep_driver.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/usart_aspep_driver.c \
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/usart_aspep_driver.c \
  ../../Inc/mc_stm_types.h \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h \
  ../../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h \

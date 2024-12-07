@@ -1,5 +1,5 @@
 Application/User/pwm_curr_fdbk.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/pwm_curr_fdbk.c \
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/pwm_curr_fdbk.c \
  ../../Inc/pwm_curr_fdbk.h ../../Inc/mc_type.h ../../Inc/mc_stm_types.h \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h \
  ../../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h \

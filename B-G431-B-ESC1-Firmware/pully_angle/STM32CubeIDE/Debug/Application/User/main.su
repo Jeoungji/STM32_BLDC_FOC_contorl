@@ -1,3 +1,3 @@
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/main.c:193:6:SystemClock_Config	88	static,ignoring_inline_asm
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/main.c:101:5:main	32	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/main.c:279:6:Error_Handler	0	static,ignoring_inline_asm
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/main.c:193:6:SystemClock_Config	88	static,ignoring_inline_asm
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/main.c:101:5:main	32	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/main.c:279:6:Error_Handler	0	static,ignoring_inline_asm

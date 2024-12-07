@@ -1,6 +1,6 @@
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:71:6:TIM4_IRQHandler	0	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:110:6:USART2_IRQHandler	8	static,ignoring_inline_asm
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:188:6:HardFault_Handler	8	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:207:6:SysTick_Handler	8	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:262:6:EXTI15_10_IRQHandler	0	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32_mc_common_it.c:281:6:EXTI9_5_IRQHandler	0	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/stm32_mc_common_it.c:71:6:TIM4_IRQHandler	0	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/stm32_mc_common_it.c:110:6:USART2_IRQHandler	8	static,ignoring_inline_asm
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/stm32_mc_common_it.c:188:6:HardFault_Handler	8	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/stm32_mc_common_it.c:207:6:SysTick_Handler	8	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/stm32_mc_common_it.c:262:6:EXTI15_10_IRQHandler	0	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/stm32_mc_common_it.c:281:6:EXTI9_5_IRQHandler	0	static

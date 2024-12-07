@@ -1,2 +1,2 @@
 Drivers/STM32G4xx_HAL_Driver/stm32g4xx_ll_adc.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c

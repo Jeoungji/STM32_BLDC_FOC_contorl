@@ -38,8 +38,8 @@
      <rect>
       <x>12</x>
       <y>30</y>
-      <width>195</width>
-      <height>100</height>
+      <width>196</width>
+      <height>112</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -416,7 +416,7 @@
     <rect>
      <x>20</x>
      <y>20</y>
-     <width>224</width>
+     <width>225</width>
      <height>44</height>
     </rect>
    </property>
@@ -515,7 +515,7 @@
     <number>0</number>
    </property>
    <property name="tracking">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -1851,7 +1851,7 @@
       <x>10</x>
       <y>20</y>
       <width>301</width>
-      <height>34</height>
+      <height>38</height>
      </rect>
     </property>
     <property name="font">
@@ -2042,7 +2042,7 @@
       <x>10</x>
       <y>60</y>
       <width>301</width>
-      <height>76</height>
+      <height>84</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">

@@ -1,5 +1,5 @@
 Application/User/fdcan.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/fdcan.c \
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/fdcan.c \
  ../../Inc/register_interface.h \
  ../../MCSDK_v6.3.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
  ../../MCSDK_v6.3.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \

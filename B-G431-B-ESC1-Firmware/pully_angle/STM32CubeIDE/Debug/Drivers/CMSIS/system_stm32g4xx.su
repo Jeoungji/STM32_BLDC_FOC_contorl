@@ -1,2 +1,2 @@
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/system_stm32g4xx.c:179:6:SystemInit	0	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/system_stm32g4xx.c:228:6:SystemCoreClockUpdate	0	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/system_stm32g4xx.c:179:6:SystemInit	0	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/system_stm32g4xx.c:228:6:SystemCoreClockUpdate	0	static

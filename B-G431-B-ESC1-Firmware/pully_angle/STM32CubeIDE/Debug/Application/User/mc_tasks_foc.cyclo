@@ -1,8 +1,8 @@
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/mc_tasks_foc.c:474:13:FOC_Clear	1
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/mc_tasks_foc.c:85:13:FOC_Init	1
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/mc_tasks_foc.c:176:6:TSK_MF_StopProcessing	1
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/mc_tasks_foc.c:521:13:FOC_InitAdditionalMethods	1
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/mc_tasks_foc.c:552:13:FOC_CalcCurrRef	2
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/mc_tasks_foc.c:615:16:FOC_HighFrequencyTask	2
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/mc_tasks_foc.c:710:6:USER_PositionVelocityRegulation	8
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/mc_tasks_foc.c:194:13:TSK_MediumFrequencyTaskM1	32
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/mc_tasks_foc.c:474:13:FOC_Clear	1
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/mc_tasks_foc.c:85:13:FOC_Init	1
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/mc_tasks_foc.c:176:6:TSK_MF_StopProcessing	1
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/mc_tasks_foc.c:521:13:FOC_InitAdditionalMethods	1
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/mc_tasks_foc.c:552:13:FOC_CalcCurrRef	2
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/mc_tasks_foc.c:615:16:FOC_HighFrequencyTask	2
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/mc_tasks_foc.c:710:6:USER_PositionVelocityRegulation	8
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/mc_tasks_foc.c:194:13:TSK_MediumFrequencyTaskM1	32

@@ -163,6 +163,7 @@ class WindowClass(QMainWindow, form_class) :
         QMessageBox.critical(self,title,message)
         
     def closeEvent(self, event):
+        print("Close")
         self.closed.emit()
         event.accept()
         self.backend.close()

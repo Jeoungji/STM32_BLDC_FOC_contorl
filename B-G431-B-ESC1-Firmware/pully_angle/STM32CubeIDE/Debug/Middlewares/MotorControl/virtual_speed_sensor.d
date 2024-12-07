@@ -1,5 +1,5 @@
 Middlewares/MotorControl/virtual_speed_sensor.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/MCSDK_v6.3.0-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c \
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/MCSDK_v6.3.0-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c \
  ../../MCSDK_v6.3.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h \
  ../../MCSDK_v6.3.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h \
  ../../Inc/mc_type.h ../../Inc/mc_stm_types.h \

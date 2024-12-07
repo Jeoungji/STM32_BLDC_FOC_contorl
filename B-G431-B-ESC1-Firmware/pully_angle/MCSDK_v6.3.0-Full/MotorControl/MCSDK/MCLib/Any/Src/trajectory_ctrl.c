@@ -293,7 +293,14 @@ void TC_PositionRegulation(PosCtrl_Handle_t *pHandle)
     hTorqueRef_Pos = PID_Controller(pHandle->PIDPosRegulator, wError);
 
     STC_SetControlMode(pHandle->pSTC, MCM_TORQUE_MODE);
-    STC_ExecRamp(pHandle->pSTC, hTorqueRef_Pos, 2);
+    STC_ExecRamp(pHandle->pSTC, hTorqueRef_Pos, 0);
+    FDCAN_Soft_FifoQ_Test(0x45, 4, wMecAngle);
+    uint8_t d[8];
+    memcpy(d, &pHandle->Theta, sizeof(float));
+    FDCAN_Soft_FifoQ_Test(0x46, 4, wMecAngleRef);
+    FDCAN_Soft_FifoQ_Test(0x49, 4, d);
+    FDCAN_Soft_FifoQ_Test(0x47, 4, wError);
+    FDCAN_Soft_FifoQ_Test(0x48, 4, hTorqueRef_Pos);
   }
   else
   {

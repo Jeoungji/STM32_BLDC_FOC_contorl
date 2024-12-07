@@ -153,6 +153,7 @@ typedef struct
                                     */
   int32_t	uUpperLimit;
   int32_t	uLowerLimit;
+  uint16_t	con;
 } PID_Handle_t;
 
 /* Initializes the handle of a PID component */

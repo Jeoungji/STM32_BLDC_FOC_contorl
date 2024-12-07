@@ -1,5 +1,5 @@
 Drivers/CMSIS/system_stm32g4xx.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/system_stm32g4xx.c \
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/system_stm32g4xx.c \
  ../../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h \
  ../../Drivers/CMSIS/Include/core_cm4.h \

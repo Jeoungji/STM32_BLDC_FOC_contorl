@@ -627,19 +627,24 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     int32_t wOutput_32;
     int32_t wIntegral_sum_temp;
     int32_t wDischarge = 0;
-    int16_t hUpperOutputLimit = (int16_t)pHandle->uUpperLimit;//pHandle->hUpperOutputLimit;//
-    int16_t hLowerOutputLimit = (int16_t)pHandle->uLowerLimit;//pHandle->hLowerOutputLimit;//
+    int32_t hUpperOutputLimit = (int32_t)pHandle->uUpperLimit;//pHandle->hUpperOutputLimit;//
+    int32_t hLowerOutputLimit = (int32_t)pHandle->uLowerLimit;//pHandle->hLowerOutputLimit;//
 
+    if (pHandle->wUpperIntegralLimit == (int32_t)(NOMINAL_CURRENT * PID_POSITION_KIDIV)) // Position pi
+    {
+    	hUpperOutputLimit = INT32_MAX;
+    	hLowerOutputLimit = -INT32_MAX;
+    }
     /* Proportional term computation*/
-    wProportional_Term = pHandle->hKpGain * wProcessVarError;
-    if (wProcessVarError > 0) {
-    	if (wProportional_Term < 0) {
-    		wProportional_Term = INT32_MAX;
+    wProportional_Term = (int32_t)pHandle->hKpGain * wProcessVarError;
+    if (wProcessVarError < 0) {
+    	if (wProportional_Term > wProcessVarError) {
+    		wProportional_Term = -INT32_MAX;
     	}
     }
     else {
-    	if (wProportional_Term > 0) {
-			wProportional_Term = -INT32_MAX;
+    	if (wProportional_Term < wProcessVarError) {
+			wProportional_Term = INT32_MAX;
 		}
     }
 
@@ -650,8 +655,8 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     }
     else
     {
-      wIntegral_Term = pHandle->hKiGain * (wProcessVarError);// - pHandle->uAntiWindup);
-      wIntegral_sum_temp = pHandle->wIntegralTerm + wIntegral_Term;
+      wIntegral_Term = (int32_t)pHandle->hKiGain * (wProcessVarError);
+      wIntegral_sum_temp = (int32_t)pHandle->wIntegralTerm + wIntegral_Term;
 
       if (wIntegral_sum_temp < 0)
       {
@@ -712,27 +717,12 @@ __weak int16_t PI_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     //cstat !MISRAC2012-Rule-1.3_n !ATH-shift-neg !MISRAC2012-Rule-10.1_R6
     int32_t wP_TermDiv = (wProportional_Term >> pHandle->hKpDivisorPOW2);
     int32_t wI_TermDiv = (pHandle->wIntegralTerm >> pHandle->hKiDivisorPOW2);
-    wOutput_32 = wP_TermDiv + wI_TermDiv;
-    //wOutput_32 = (wProportional_Term >> pHandle->hKpDivisorPOW2) + (pHandle->wIntegralTerm >> pHandle->hKiDivisorPOW2);
+    wOutput_32 = wP_TermDiv;// + wI_TermDiv;
+    wOutput_32 = (wProportional_Term >> pHandle->hKpDivisorPOW2) + (pHandle->wIntegralTerm >> pHandle->hKiDivisorPOW2);
 #else
     wOutput_32 = (wProportional_Term / (int32_t)pHandle->hKpDivisor)
               + (pHandle->wIntegralTerm / (int32_t)pHandle->hKiDivisor);
 #endif
-
-	  if (wOutput_32 < 0)
-	  {
-		if (wP_TermDiv > 0 && wI_TermDiv > 0)
-		{
-			wOutput_32 = INT32_MAX;
-		}
-	  }
-	  else
-	  {
-		if (wP_TermDiv < 0 && wI_TermDiv < 0)
-		{
-			wOutput_32 = -INT32_MAX;
-		}
-	  }
 
     if (wOutput_32 > hUpperOutputLimit)
     {
@@ -806,17 +796,6 @@ __weak int16_t PID_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
       wDeltaError = wProcessVarError - pHandle->wPrevProcessVarError;
       wDifferential_Term = pHandle->hKdGain * wDeltaError;
 
-      if (wDeltaError > 0) {
-    	  if (wDifferential_Term < 0) {
-    		  wDifferential_Term = INT32_MAX;
-    	  }
-      }
-      else {
-    	  if (wDifferential_Term > 0) {
-    		  wDifferential_Term = -INT32_MAX;
-    	  }
-      }
-
 #ifndef FULL_MISRA_C_COMPLIANCY_PID_REGULATOR
       /* WARNING: the below instruction is not MISRA compliant, user should verify
          that Cortex-M3 assembly instruction ASR (arithmetic shift right)
@@ -832,7 +811,12 @@ __weak int16_t PID_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
       int32_t pi_ouput = PI_Controller(pHandle, wProcessVarError);
       wTemp_output = pi_ouput + wDifferential_Term;
 
-      if (wTemp_output < 0) {
+      //FDCAN_Soft_FifoQ_Test(0x40, 4, pi_ouput);
+      //FDCAN_Soft_FifoQ_Test(0x41, 4, wDifferential_Term);
+      //FDCAN_Soft_FifoQ_Test(0x42, 4, wDeltaError);
+      //FDCAN_Soft_FifoQ_Test(0x43, 4, wProcessVarError);
+      //FDCAN_Soft_FifoQ_Test(0x44, 4, pHandle->wPrevProcessVarError);
+/*      if (wTemp_output < 0) {
     	  if (pi_ouput > 0 && wDifferential_Term > 0) {
     		  wTemp_output = INT32_MAX;
     	  }
@@ -841,7 +825,7 @@ __weak int16_t PID_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
     	  if (pi_ouput < 0 && wDifferential_Term < 0) {
 			  wTemp_output = -INT32_MAX;
 		  }
-      }
+      }*/
 
 /*      if (wTemp_output > pHandle->hUpperOutputLimit)
       {
@@ -855,21 +839,20 @@ __weak int16_t PID_Controller(PID_Handle_t *pHandle, int32_t wProcessVarError)
       {
 
       }*/
-
-      if (wTemp_output > pHandle->uUpperLimit)
-	  {
-    	  wTemp_output = pHandle->uUpperLimit;
-	  }
-      else if (wTemp_output < pHandle->uLowerLimit)
-	  {
-    	  wTemp_output = pHandle->uLowerLimit;
-	  }
-      else
-      {
-
-      }
-
     }
+
+    if (wTemp_output > pHandle->uUpperLimit)
+	  {
+		  wTemp_output = pHandle->uUpperLimit;
+	  }
+	  else if (wTemp_output < pHandle->uLowerLimit)
+	  {
+		  wTemp_output = pHandle->uLowerLimit;
+	  }
+	  else
+	  {
+
+	  }
 
     returnValue = (int16_t) wTemp_output;
 #ifdef NULL_PTR_CHECK_PID_REG

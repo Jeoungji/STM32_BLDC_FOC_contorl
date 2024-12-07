@@ -62,8 +62,8 @@ all: main-build
 main-build: pully_angle.elf secondary-outputs
 
 # Tool invocations
-pully_angle.elf pully_angle.map: $(OBJS) $(USER_OBJS) C:\Users\JeungJiu\.st_workbench\projects\pully_angle\STM32CubeIDE\STM32G431CBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "pully_angle.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\JeungJiu\.st_workbench\projects\pully_angle\STM32CubeIDE\STM32G431CBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pully_angle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+pully_angle.elf pully_angle.map: $(OBJS) $(USER_OBJS) D:\motor\STM32_BLDC_FOC_contorl\B-G431-B-ESC1-Firmware\pully_angle\STM32CubeIDE\STM32G431CBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "pully_angle.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\motor\STM32_BLDC_FOC_contorl\B-G431-B-ESC1-Firmware\pully_angle\STM32CubeIDE\STM32G431CBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pully_angle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

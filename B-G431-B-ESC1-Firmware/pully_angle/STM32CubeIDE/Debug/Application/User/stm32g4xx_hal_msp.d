@@ -1,5 +1,5 @@
 Application/User/stm32g4xx_hal_msp.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/stm32g4xx_hal_msp.c \
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/stm32g4xx_hal_msp.c \
  ../../Inc/main.h ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h \
  ../../Inc/stm32g4xx_hal_conf.h \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h \

@@ -1,5 +1,5 @@
 Application/User/gpio.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/gpio.c \
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/gpio.c \
  ../../Inc/gpio.h ../../Inc/main.h \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h \
  ../../Inc/stm32g4xx_hal_conf.h \

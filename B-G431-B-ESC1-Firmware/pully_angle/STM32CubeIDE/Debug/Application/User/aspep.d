@@ -1,5 +1,5 @@
 Application/User/aspep.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/aspep.c \
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/aspep.c \
  ../../Inc/aspep.h ../../Inc/parameters_conversion.h ../../Inc/mc_math.h \
  ../../Inc/mc_type.h ../../Inc/mc_stm_types.h \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h \

@@ -1,5 +1,5 @@
 Middlewares/MotorControl/open_loop.o: \
- C:/Users/JeungJiu/.st_workbench/projects/pully_angle/MCSDK_v6.3.0-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c \
+ D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/MCSDK_v6.3.0-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c \
  ../../MCSDK_v6.3.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/open_loop.h \
  ../../Inc/mc_type.h ../../Inc/mc_stm_types.h \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h \

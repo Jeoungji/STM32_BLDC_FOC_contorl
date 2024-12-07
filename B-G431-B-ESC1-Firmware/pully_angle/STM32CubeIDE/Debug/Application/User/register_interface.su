@@ -1,7 +1,7 @@
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:33:9:RI_SetRegisterGlobal	8	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:167:9:RI_SetRegisterMotor1	24	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:637:9:RI_GetRegisterGlobal	8	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:782:11:RI_GetRegisterMotor1	112	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:1433:9:RI_MovString	4	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:1459:9:RI_GetIDSize	0	static
-C:/Users/JeungJiu/.st_workbench/projects/pully_angle/Src/register_interface.c:1494:16:RI_GetPtrReg	0	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/register_interface.c:33:9:RI_SetRegisterGlobal	8	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/register_interface.c:167:9:RI_SetRegisterMotor1	24	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/register_interface.c:637:9:RI_GetRegisterGlobal	8	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/register_interface.c:782:11:RI_GetRegisterMotor1	112	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/register_interface.c:1433:9:RI_MovString	4	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/register_interface.c:1459:9:RI_GetIDSize	0	static
+D:/motor/STM32_BLDC_FOC_contorl/B-G431-B-ESC1-Firmware/pully_angle/Src/register_interface.c:1494:16:RI_GetPtrReg	0	static

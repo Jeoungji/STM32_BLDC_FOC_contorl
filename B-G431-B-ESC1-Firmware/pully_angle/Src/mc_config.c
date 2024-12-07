@@ -61,7 +61,8 @@ PID_Handle_t PIDSpeedHandle_M1 =
   .hKdDivisor          = 0x0000U,
   .hKdDivisorPOW2      = 0x0000U,
   .uUpperLimit			= (int16_t)IQMAX,
-  .uLowerLimit			= -(int16_t)IQMAX
+  .uLowerLimit			= -(int16_t)IQMAX,
+  .con			   = (uint8_t)2,
 };
 
 /**
@@ -84,6 +85,7 @@ PID_Handle_t PIDIqHandle_M1 =
   .hKdDivisorPOW2      = 0x0000U,
   .uUpperLimit			= INT16_MAX,
   .uLowerLimit			= -INT16_MAX,
+  .con			   = (uint8_t)0,
 };
 
 /**
@@ -106,6 +108,7 @@ PID_Handle_t PIDIdHandle_M1 =
   .hKdDivisorPOW2      = 0x0000U,
   .uUpperLimit			= INT16_MAX,
   .uLowerLimit			= -INT16_MAX,
+  .con			   = (uint8_t)1,
 };
 
 /**
@@ -137,6 +140,7 @@ PID_Handle_t PID_PosParamsM1 =
   .hKdDivisorPOW2      = (uint16_t)PID_POSITION_KDDIV_LOG,
   .uUpperLimit		   = (int16_t)NOMINAL_CURRENT,
   .uLowerLimit		   = -(int16_t)NOMINAL_CURRENT,
+  .con			   = (uint8_t)3,
 };
 
 PosCtrl_Handle_t PosCtrlM1 =
